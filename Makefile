@@ -1,108 +1,119 @@
-NAME	=	libft.a
+NAME		=	libft.a
 
-SRCS	=	ft_putchar.c \
-			ft_putstr.c \
-			ft_strlen.c \
-			ft_strdup.c \
-			ft_strnew.c \
-			ft_strjoin.c \
-			ft_strcat.c \
-			ft_strchr.c \
-			ft_strrchr.c \
-			ft_putnbr.c \
-			ft_atoi.c \
-			ft_itoa.c \
-			ft_absval.c \
-			ft_bzero.c \
-			ft_factorial.c \
-			ft_isalpha.c \
-			ft_isdigit.c \
-			ft_isalnum.c \
-			ft_isascii.c \
-			ft_isprint.c \
-			ft_isspace.c \
-			ft_itoa_base.c \
-			ft_memalloc.c \
-			ft_memset.c \
-			ft_memchr.c \
-			ft_memcpy.c \
-			ft_memccpy.c \
-			ft_memcmp.c \
-			ft_memdel.c \
-			ft_memmove.c \
-			ft_putchar_fd.c \
-			ft_lstnew.c \
-			ft_lstmap.c \
-			ft_lstiter.c \
-			ft_lstadd.c \
-			ft_lstdelone.c \
-			ft_lstdel.c \
-			ft_stackswap.c \
-			ft_stackrotate.c \
-			ft_stackrrotate.c \
-			ft_stackpush.c \
-			ft_stackpop.c \
-			ft_stackpeek.c \
-			ft_stackmove.c \
-			ft_stackisempty.c \
-			ft_stackisfull.c \
-			ft_stacknew.c \
-			ft_putnbr_fd.c \
-			ft_putstr.c \
-			ft_putendl.c \
-			ft_putendl_fd.c \
-			ft_putwchar.c \
-			ft_putwstr.c \
-			ft_strclr.c \
-			ft_strdel.c \
-			ft_strequ.c \
-			ft_striter.c \
-			ft_striteri.c \
-			ft_strcpy.c \
-			ft_strcmp.c \
-			ft_strlcat.c \
-			ft_strmap.c \
-			ft_strmapi.c \
-			ft_wstrdup.c \
-			ft_wcharlen.c \
-			ft_wstrlen.c \
-			ft_wstrcmp.c \
-			ft_wstrjoin.c \
-			ft_strncmp.c \
-			ft_wstrncmp.c \
-			ft_strcpy.c \
-			ft_strstr.c \
-			ft_strnstr.c \
-			ft_ugetchar.c \
-			ft_strsub.c \
-			ft_strsplit.c \
-			ft_strtrim.c \
-			ft_strncat.c \
-			ft_toupper.c \
-			ft_tolower.c \
-			ft_strnequ.c \
-			ft_wstrcat.c \
-			ft_wstrnew.c \
-			ft_wstrchr.c
+SRCS		=	ft_putchar.c \
+				ft_putstr.c \
+				ft_strlen.c \
+				ft_strdup.c \
+				ft_strnew.c \
+				ft_strjoin.c \
+				ft_strcat.c \
+				ft_strchr.c \
+				ft_strrchr.c \
+				ft_putnbr.c \
+				ft_atoi.c \
+				ft_itoa.c \
+				ft_absval.c \
+				ft_bzero.c \
+				ft_factorial.c \
+				ft_isalpha.c \
+				ft_isdigit.c \
+				ft_isalnum.c \
+				ft_isascii.c \
+				ft_isprint.c \
+				ft_isspace.c \
+				ft_itoa_base.c \
+				ft_memalloc.c \
+				ft_memset.c \
+				ft_memchr.c \
+				ft_memcpy.c \
+				ft_memccpy.c \
+				ft_memcmp.c \
+				ft_memdel.c \
+				ft_memmove.c \
+				ft_putchar_fd.c \
+				ft_lstnew.c \
+				ft_lstmap.c \
+				ft_lstiter.c \
+				ft_lstadd.c \
+				ft_lstdelone.c \
+				ft_lstdel.c \
+				ft_stackswap.c \
+				ft_stackrotate.c \
+				ft_stackrrotate.c \
+				ft_stackpush.c \
+				ft_stackpop.c \
+				ft_stackpeek.c \
+				ft_stackmove.c \
+				ft_stackisempty.c \
+				ft_stackisfull.c \
+				ft_stacknew.c \
+				ft_putnbr_fd.c \
+				ft_putstr.c \
+				ft_putendl.c \
+				ft_putendl_fd.c \
+				ft_putwchar.c \
+				ft_putwstr.c \
+				ft_strclr.c \
+				ft_strdel.c \
+				ft_strequ.c \
+				ft_striter.c \
+				ft_striteri.c \
+				ft_strcpy.c \
+				ft_strcmp.c \
+				ft_strlcat.c \
+				ft_strmap.c \
+				ft_strmapi.c \
+				ft_wstrdup.c \
+				ft_wcharlen.c \
+				ft_wstrlen.c \
+				ft_wstrcmp.c \
+				ft_wstrjoin.c \
+				ft_strncmp.c \
+				ft_wstrncmp.c \
+				ft_strcpy.c \
+				ft_strstr.c \
+				ft_strnstr.c \
+				ft_ugetchar.c \
+				ft_strsub.c \
+				ft_strsplit.c \
+				ft_strtrim.c \
+				ft_strncat.c \
+				ft_toupper.c \
+				ft_tolower.c \
+				ft_strnequ.c \
+				ft_wstrcat.c \
+				ft_wstrnew.c \
+				ft_wstrchr.c
 
-OBJS	=	$(addprefix srcs/, $(SRCS:.c=.o))
+GNL_SRCS	=	get_next_line.c
 
-INCS	=	./includes
+SRCS_PATH	=	./srcs
 
-CC		=	clang
+GNL_PATH	=	./get_next_line
 
-FLAGS	=	-Weverything -Werror -pedantic
+OBJS		=	$(addprefix srcs/, $(SRCS:.c=.o))
+
+GNL_OBJS	=	$(addprefix get_next_line/, $(GNL_SRCS:.c=.o))
+
+INCS		=	./includes
+
+CC			=	clang
+
+FLAGS		=	-Weverything -Werror -pedantic
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar -rcs $(NAME) $(OBJS)
+$(NAME): $(OBJS) $(GNL_OBJS)
+	ar -rcs $(NAME) $(OBJS) $(GNL_OBJS)
 
-srcs/%.o: srcs/%.c
+$(SRCS_PATH)/%.o: $(SRCS_PATH)/%.c
+	$(CC) $(FLAGS) -o $@ -c $< -I$(INCS)
+
+$(GNL_PATH)/%.o: $(GNL_PATH)/%.c
 	$(CC) $(FLAGS) -o $@ -c $< -I$(INCS)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(GNL_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
