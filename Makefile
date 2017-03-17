@@ -87,13 +87,31 @@ SRCS		=	ft_putchar.c \
 
 GNL_SRCS	=	get_next_line.c
 
+PRINTF_SRCS	=	ft_colors.c \
+				ft_is.c \
+				ft_is2.c \
+				ft_parse.c \
+				ft_preprocess.c \
+				ft_preprocess2.c \
+				ft_printf.c \
+				ft_process.c \
+				ft_process2.c \
+				ft_process3.c \
+				ft_save.c \
+				ft_toolbox.c \
+				ft_toolbox2.c
+
 SRCS_PATH	=	./srcs
+
+PRINTF_PATH	=	./ft_printf
 
 GNL_PATH	=	./get_next_line
 
 OBJS		=	$(addprefix srcs/, $(SRCS:.c=.o))
 
 GNL_OBJS	=	$(addprefix get_next_line/, $(GNL_SRCS:.c=.o))
+
+PRINTF_OBJS	=	$(addprefix ft_printf/, $(PRINTF_SRCS:.c=.o))
 
 INCS		=	./includes
 
@@ -103,8 +121,8 @@ FLAGS		=	-Weverything -Werror -pedantic
 
 all: $(NAME)
 
-$(NAME): $(OBJS) $(GNL_OBJS)
-	ar -rcs $(NAME) $(OBJS) $(GNL_OBJS)
+$(NAME): $(OBJS) $(GNL_OBJS) $(PRINTF_OBJS)
+	ar -rcs $(NAME) $(OBJS) $(GNL_OBJS) $(PRINTF_OBJS)
 
 $(SRCS_PATH)/%.o: $(SRCS_PATH)/%.c
 	$(CC) $(FLAGS) -o $@ -c $< -I$(INCS)
@@ -112,8 +130,11 @@ $(SRCS_PATH)/%.o: $(SRCS_PATH)/%.c
 $(GNL_PATH)/%.o: $(GNL_PATH)/%.c
 	$(CC) $(FLAGS) -o $@ -c $< -I$(INCS)
 
+$(PRINTF_PATH)/%.o: $(PRINTF_PATH)/%.c
+	$(CC) $(FLAGS) -o $@ -c $< -I$(INCS)
+
 clean:
-	rm -f $(OBJS) $(GNL_OBJS)
+	rm -f $(OBJS) $(GNL_OBJS) $(PRINTF_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
