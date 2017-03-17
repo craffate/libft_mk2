@@ -6,7 +6,7 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 09:30:15 by craffate          #+#    #+#             */
-/*   Updated: 2017/03/17 14:43:17 by craffate         ###   ########.fr       */
+/*   Updated: 2017/03/17 15:23:22 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,8 @@ unsigned int	ft_savele(unsigned int i, const char *s);
 void			ft_swappref(wchar_t *s, const char spe, int *arr);
 void			ft_swapsign(wchar_t *s, const char spe, int *arr);
 void			ft_widthmin(wchar_t *s, wchar_t *s2, const char spe, int *arr);
-void			ft_widthnomin(wchar_t *s, wchar_t *s2, const char spe, int *arr);
+void			ft_widthnomin(wchar_t *s, wchar_t *s2, const char spe,
+				int *arr);
 wchar_t			*ft_llitoa_base(long long n, unsigned int b, const char spe);
 wchar_t			*ft_precision(const char spe, wchar_t *s, int *arr);
 wchar_t			*ft_preprocess(const char spe, va_list ap, int *arr, int *i);
