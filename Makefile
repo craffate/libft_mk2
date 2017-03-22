@@ -83,7 +83,8 @@ SRCS		=	ft_putchar.c \
 				ft_strnequ.c \
 				ft_wstrcat.c \
 				ft_wstrnew.c \
-				ft_wstrchr.c
+				ft_wstrchr.c \
+				ft_strpush.c
 
 GNL_SRCS	=	get_next_line.c
 

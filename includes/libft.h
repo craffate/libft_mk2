@@ -6,7 +6,7 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 04:36:29 by craffate          #+#    #+#             */
-/*   Updated: 2017/03/17 15:26:32 by craffate         ###   ########.fr       */
+/*   Updated: 2017/03/22 16:50:53 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 # include <stddef.h>
 # include <limits.h>
 # include <wchar.h>
+
+# define MALLOCSIZE_STR 32
 
 typedef struct		s_list
 {
@@ -114,6 +116,7 @@ void				ft_strclr(char *s);
 void				ft_strdel(char **as);
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
+void				ft_strpush(char **s, const char c);
 wchar_t				*ft_wstrcat(wchar_t *s1, const wchar_t *s2);
 wchar_t				*ft_wstrchr(const wchar_t *s, const int c);
 wchar_t				*ft_wstrdup(const wchar_t *s);
