@@ -84,7 +84,8 @@ SRCS		=	ft_putchar.c \
 				ft_wstrcat.c \
 				ft_wstrnew.c \
 				ft_wstrchr.c \
-				ft_strpush.c
+				ft_strpush.c \
+				ft_stackprint.c
 
 GNL_SRCS	=	get_next_line.c
 
@@ -118,7 +119,7 @@ INCS		=	./includes
 
 CC			=	clang
 
-FLAGS		=	-Weverything -Werror -pedantic
+FLAGS		=	-Weverything
 
 all: $(NAME)
 

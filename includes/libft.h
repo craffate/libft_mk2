@@ -6,7 +6,7 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 04:36:29 by craffate          #+#    #+#             */
-/*   Updated: 2017/03/22 16:50:53 by craffate         ###   ########.fr       */
+/*   Updated: 2017/03/24 20:20:01 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,6 +108,7 @@ void				ft_putstr_fd(const char *s, const int fd);
 void				ft_putwchar(const wchar_t c);
 void				ft_putwstr(const wchar_t *s);
 void				ft_stackmove(t_stack *a, t_stack *b);
+void				ft_stackprint(t_stack stack);
 void				ft_stackpush(t_stack *stack, int data);
 void				ft_stackrotate(t_stack *stack);
 void				ft_stackrrotate(t_stack *stack);
