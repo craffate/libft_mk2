@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
+/*   ft_lltoa_base.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 09:15:59 by craffate          #+#    #+#             */
-/*   Updated: 2017/03/15 15:22:48 by craffate         ###   ########.fr       */
+/*   Updated: 2017/03/25 00:56:18 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static unsigned int	getsize(long long int *n, const int b)
 	return (si);
 }
 
-char				*ft_itoa_base(long long int n, const int b)
+char				*ft_lltoa_base(long long int n, const int b)
 {
 	unsigned int	si;
 	char			*s;

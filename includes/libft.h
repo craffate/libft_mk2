@@ -6,7 +6,7 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 04:36:29 by craffate          #+#    #+#             */
-/*   Updated: 2017/03/24 20:20:01 by craffate         ###   ########.fr       */
+/*   Updated: 2017/03/25 00:57:41 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ typedef struct		s_stack
 }					t_stack;
 
 char				**ft_strsplit(const char *s, const char c);
-char				*ft_itoa(long long int n);
-char				*ft_itoa_base(long long int n, const int b);
+char				*ft_lltoa(long long int n);
+char				*ft_lltoa_base(long long int n, const int b);
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strchr(const char *s, const int c);
 char				*ft_strcpy(char *src, const char *dst);
@@ -75,7 +75,7 @@ int					ft_toupper(const int c);
 int					ft_ugetchar(void);
 int					ft_wstrcmp(const wchar_t *s1, const wchar_t *s2);
 int					ft_wstrncmp(const wchar_t *s1, const wchar_t *s2, size_t n);
-long long int		ft_atoi(const char *s);
+long long int		ft_atoll(const char *s);
 long long int		ft_factorial(const int n);
 size_t				ft_strlcat(char *dst, const char *src, const size_t si);
 size_t				ft_strlen(const char *s);
