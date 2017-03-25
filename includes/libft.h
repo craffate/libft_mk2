@@ -6,7 +6,7 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 04:36:29 by craffate          #+#    #+#             */
-/*   Updated: 2017/03/25 00:57:41 by craffate         ###   ########.fr       */
+/*   Updated: 2017/03/25 05:04:09 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ char				*ft_strstr(const char *s1, const char *s2);
 char				*ft_strsub(const char *s, unsigned int st, size_t si);
 char				*ft_strtrim(const char *s);
 int					ft_absval(const int n);
+int					ft_atoi(const char *s);
 int					ft_isalnum(const int c);
 int					ft_isalpha(const int c);
 int					ft_isascii(const int c);

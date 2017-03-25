@@ -10,8 +10,8 @@ SRCS		=	ft_putchar.c \
 				ft_strchr.c \
 				ft_strrchr.c \
 				ft_putnbr.c \
-				ft_atoi.c \
-				ft_itoa.c \
+				ft_atoll.c \
+				ft_lltoa.c \
 				ft_absval.c \
 				ft_bzero.c \
 				ft_factorial.c \
@@ -21,7 +21,7 @@ SRCS		=	ft_putchar.c \
 				ft_isascii.c \
 				ft_isprint.c \
 				ft_isspace.c \
-				ft_itoa_base.c \
+				ft_lltoa_base.c \
 				ft_memalloc.c \
 				ft_memset.c \
 				ft_memchr.c \
@@ -85,7 +85,8 @@ SRCS		=	ft_putchar.c \
 				ft_wstrnew.c \
 				ft_wstrchr.c \
 				ft_strpush.c \
-				ft_stackprint.c
+				ft_stackprint.c \
+				ft_atoi.c
 
 GNL_SRCS	=	get_next_line.c
 
