@@ -37,6 +37,7 @@ SRCS		=	ft_putchar.c \
 				ft_lstadd.c \
 				ft_lstdelone.c \
 				ft_lstdel.c \
+				ft_sqrt.c \
 				ft_stackswap.c \
 				ft_stackrotate.c \
 				ft_stackrrotate.c \

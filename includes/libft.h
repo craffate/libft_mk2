@@ -6,7 +6,7 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 04:36:29 by craffate          #+#    #+#             */
-/*   Updated: 2017/03/25 05:04:09 by craffate         ###   ########.fr       */
+/*   Updated: 2017/09/17 06:03:16 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ int					ft_isdigit(const int n);
 int					ft_isprint(const int c);
 int					ft_isspace(const int c);
 int					ft_memcmp(const void *s1, const void *s2, size_t si);
+int					ft_sqrt(const int nb);
 int					ft_stackisempty(const t_stack stack);
 int					ft_stackisfull(const t_stack stack);
 int					ft_stackpeek(const t_stack stack);
