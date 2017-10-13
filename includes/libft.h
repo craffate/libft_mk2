@@ -6,7 +6,7 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 04:36:29 by craffate          #+#    #+#             */
-/*   Updated: 2017/09/17 06:03:16 by craffate         ###   ########.fr       */
+/*   Updated: 2017/10/13 08:05:39 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <wchar.h>
 
 # define MALLOCSIZE_STR 32
+# define MALLOCSIZE_ARR 4
 
 typedef struct		s_list
 {
@@ -79,6 +80,7 @@ int					ft_wstrcmp(const wchar_t *s1, const wchar_t *s2);
 int					ft_wstrncmp(const wchar_t *s1, const wchar_t *s2, size_t n);
 long long int		ft_atoll(const char *s);
 long long int		ft_factorial(const int n);
+size_t				ft_arrlen(const char **arr);
 size_t				ft_strlcat(char *dst, const char *src, const size_t si);
 size_t				ft_strlen(const char *s);
 size_t				ft_wcharlen(const wchar_t c);
@@ -94,6 +96,8 @@ void				*ft_memchr(const void *s, const int c, size_t si);
 void				*ft_memcpy(void *dst, const void *src, size_t si);
 void				*ft_memmove(void *dst, const void *src, size_t si);
 void				*ft_memset(void *b, const int c, size_t si);
+void				ft_arrfree(char **arr);
+void				ft_arrpush(char ***arr, const char *s);
 void				ft_bzero(char *s, size_t si);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
