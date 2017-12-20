@@ -6,7 +6,7 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 04:36:29 by craffate          #+#    #+#             */
-/*   Updated: 2017/10/13 08:05:39 by craffate         ###   ########.fr       */
+/*   Updated: 2017/12/20 17:45:17 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ void				*ft_memset(void *b, const int c, size_t si);
 void				ft_arrfree(char **arr);
 void				ft_arrpush(char ***arr, const char *s);
 void				ft_bzero(char *s, size_t si);
-void				ft_lstadd(t_list **alst, t_list *new);
+void				ft_lstadd(t_list **alst, t_list *node);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_memdel(void **ap);

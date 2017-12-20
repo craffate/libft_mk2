@@ -6,14 +6,14 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 14:02:41 by craffate          #+#    #+#             */
-/*   Updated: 2017/03/15 14:03:26 by craffate         ###   ########.fr       */
+/*   Updated: 2017/12/20 17:45:00 by craffate         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+void	ft_lstadd(t_list **alst, t_list *node)
 {
-	new->next = *alst;
-	*alst = new;
+	node->next = *alst;
+	*alst = node;
 }
