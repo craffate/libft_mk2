@@ -128,8 +128,22 @@ FLAGS		=	-Weverything
 
 all: $(NAME)
 
-$(NAME): $(OBJS) $(GNL_OBJS) $(PRINTF_OBJS)
-	ar -rcs $(NAME) $(OBJS) $(GNL_OBJS) $(PRINTF_OBJS)
+ifeq ($(USE_GNL), true)
+$(NAME): $(GNL_OBJS)
+endif
+
+ifeq ($(USE_PRINTF), true)
+$(NAME): $(PRINTF_OBJS)
+endif
+
+$(NAME): $(OBJS)
+	ar -rcs $(NAME) $(OBJS)
+ifeq ($(USE_GNL), true)
+	ar -rcs $(NAME) $(GNL_OBJS)
+endif
+ifeq ($(USE_PRINTF), true)
+	ar -rcs $(NAME) $(PRINTF_OBJS)
+endif
 
 $(SRCS_PATH)/%.o: $(SRCS_PATH)/%.c
 	$(CC) $(FLAGS) -o $@ -c $< -I$(INCS)
@@ -147,5 +161,3 @@ fclean: clean
 	rm -f $(NAME)
 
 re: clean all
-
-.PHONY: clean
