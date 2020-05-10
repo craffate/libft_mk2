@@ -19,14 +19,13 @@
 # include <limits.h>
 # include <wchar.h>
 
-#ifdef __linux__
-# include <stdio.h>
-# include <stdint.h>
-#endif
+# ifdef __linux__
+#  include <stdio.h>
+#  include <stdint.h>
+# endif
 
 # define MALLOCSIZE_STR 32
 # define MALLOCSIZE_ARR 4
-
 
 typedef struct		s_list
 {
