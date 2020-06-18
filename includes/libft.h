@@ -6,7 +6,7 @@
 /*   By: craffate <craffate@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/15 04:36:29 by craffate          #+#    #+#             */
-/*   Updated: 2018/01/03 09:37:49 by craffate         ###   ########.fr       */
+/*   Updated: 2020/06/18 12:21:18 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ int					ft_toupper(const int c);
 int					ft_ugetchar(void);
 int					ft_wstrcmp(const wchar_t *s1, const wchar_t *s2);
 int					ft_wstrncmp(const wchar_t *s1, const wchar_t *s2, size_t n);
+unsigned int			ft_roundup(unsigned int v, unsigned int r);
 long long int		ft_atoll(const char *s);
 long long int		ft_factorial(const int n);
 size_t				ft_arrlen(const char **arr);
