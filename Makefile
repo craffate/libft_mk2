@@ -92,7 +92,8 @@ SRCS		=	ft_putchar.c \
 				ft_arrfree.c \
 				ft_arrpush.c \
 				ft_roundup.c \
-				ft_getopt.c
+				ft_getopt.c \
+				ft_strncpy.c
 
 GNL_SRCS	=	get_next_line.c
 
